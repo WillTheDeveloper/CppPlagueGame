@@ -25,6 +25,20 @@ int main()
         int decrementrate = 1000;
         int rateMS = 500;
 
+        void reset() {
+            plague = "";
+            population = "";
+            populationvalue = 0;
+            ongoing = false;
+            incrementrate = 1000;
+            decrementrate = 1000;
+            rateMS = 500;
+
+            std::cout << "Successfully reset" << std::endl;
+
+            start();
+        }
+
         void start() {
             std::cout << "Please state the name of the plague:" << std::endl;
             std::cin >> plague;
