@@ -1,4 +1,6 @@
 #include <iostream>
+#include <thread>
+#include <chrono>
 
 int main()
 {
@@ -15,6 +17,8 @@ int main()
         std::string plague;
         std::string population;
         int populationvalue;
+
+        bool ongoing = false;
 
         void start() {
             std::cout << "Please state the name of the plague:" << std::endl;
@@ -56,6 +60,9 @@ int main()
             std::string country = randomCountry();
 
             std::cout << prefix << plague << suffix << country << "!" << std::endl;
+
+            ongoing = true;
+            decrementPopulation();
         }
 
         std::string randomCountry() {
@@ -66,12 +73,22 @@ int main()
 
         void decrementPopulation()
         {
-
+            while (ongoing)
+            {
+                sleepForFewSeconds();
+                populationvalue -= 1000;
+                std::cout << populationvalue << std::endl;
+            }
         }
 
         void incrementPopulation()
         {
             
+        }
+
+        void sleepForFewSeconds()
+        {
+            std::this_thread::sleep_for(std::chrono::seconds(2));
         }
 
         void menu() {
