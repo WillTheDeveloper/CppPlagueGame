@@ -51,17 +51,17 @@ int main()
         }
 
         void startOutbreak() {
-            std::string suffix = "has just broken out in";
+            std::string suffix = " has just broken out in ";
             std::string prefix = "Oh no ~ ";
             std::string country = randomCountry();
 
-            std::cout << prefix << plague << suffix << country << "!!!!!!?????" << std::endl;
+            std::cout << prefix << plague << suffix << country << "!" << std::endl;
         }
 
         std::string randomCountry() {
             std::string countries[8] = {"UK", "USA", "Canada", "Germany", "Switzerland", "Italy", "Iceland", "Antarctica"};
             int random = rand() % 8;
-            std::cout << countries[random];
+            return countries[random];
         }
 
         void decrementPopulation()
