@@ -64,6 +64,16 @@ int main()
             std::cout << countries[random];
         }
 
+        void decrementPopulation()
+        {
+
+        }
+
+        void incrementPopulation()
+        {
+            
+        }
+
         void menu() {
             std::string response;
             std::cout << "Please select what you would like to do:" << std::endl;
