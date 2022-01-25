@@ -86,7 +86,7 @@ int main()
 
         std::string randomCountry() {
             std::string countries[8] = {"UK", "USA", "Canada", "Germany", "Switzerland", "Italy", "Iceland", "Antarctica"};
-            int random = rand() % 8;
+            int random = 4;
             return countries[random];
         }
 
