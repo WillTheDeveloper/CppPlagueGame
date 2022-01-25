@@ -89,6 +89,7 @@ int main()
             {
                 sleepForFewSeconds();
                 populationvalue -= decrementrate;
+                displayCurrentPopulation();
             }
         }
 
@@ -98,6 +99,7 @@ int main()
             {
                 sleepForFewSeconds();
                 populationvalue += incrementrate;
+                displayCurrentPopulation();
             }
         }
 
