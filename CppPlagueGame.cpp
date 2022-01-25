@@ -59,7 +59,9 @@ int main()
         }
 
         void randomCountry() {
-            //This will randomly pick a country and return it.
+            const char countries[8] = {"United Kingdom", "United States of America", "Canada", "Germany", "Switzerland", "Italy", "Iceland", "Antartica"};
+            int random = rand() % 8;
+            std::cout << countries[random];
         }
 
         void menu() {
