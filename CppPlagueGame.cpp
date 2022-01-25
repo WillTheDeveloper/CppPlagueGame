@@ -10,6 +10,10 @@ int main()
     std::cin >> name;
     std::cout << "Hello, " << name << "." << std::endl;
 
+    Plague yes;
+
+    yes.start;
+
     class Plague {
     public:
         std::string plague;
@@ -32,4 +36,5 @@ int main()
             std::cout << "The world's current population is " << population << std::endl;
         }
     };
+    return 0;
 }
