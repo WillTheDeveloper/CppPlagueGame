@@ -131,7 +131,7 @@ int main()
             switch(response)
             {
                 case 1:
-                start();
+                reset();
                 break;
 
                 case 2:
