@@ -47,19 +47,19 @@ int main()
             else if (response == "N")
             {
                 std::string reply;
-                std::cout << "Why not??!?!?!?!?!?" << std::endl;
+                std::cout << "Why not?!?!?!?!?!?" << std::endl;
                 std::cin >> reply;
             }
         }
 
         void startOutbreak() {
-            std::string suffix = "has just broken out in"
-            std::string prefix = "Oh no ~ "
+            std::string suffix = "has just broken out in";
+            std::string prefix = "Oh no ~ ";
             std::cout << prefix << plague << suffix << "United Kingdom" << "!!!!!!?????" << std::endl;
         }
 
         void randomCountry() {
-            const char countries[8] = {"United Kingdom", "United States of America", "Canada", "Germany", "Switzerland", "Italy", "Iceland", "Antartica"};
+            std::string countries[8] = {"UK", "USA", "Canada", "Germany", "Switzerland", "Italy", "Iceland", "Antarctica"};
             int random = rand() % 8;
             std::cout << countries[random];
         }
@@ -77,7 +77,7 @@ int main()
         void menu() {
             std::string response;
             std::cout << "Please select what you would like to do:" << std::endl;
-            std::cout << "1. Start again."
+            std::cout << "1. Start again.";
             std::cin >> response;
 
             switch(response)
@@ -91,7 +91,7 @@ int main()
                 break;
 
                 default:
-                std::cout << "Please enter a valid input!"
+                std::cout << "Please enter a valid input!";
                 menu();
             }
         }
