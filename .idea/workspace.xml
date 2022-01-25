@@ -73,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643129602023</updated>
-      <workItem from="1643129603193" duration="403000" />
+      <workItem from="1643129603193" duration="580000" />
     </task>
     <task id="LOCAL-00001" summary="CLion files">
       <created>1643129621577</created>
@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643129692789</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed loads of basic typo errors">
+      <created>1643130020672</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643130020672</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +117,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="CLion files" />
     <MESSAGE value="Created cMake files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created cMake files" />
+    <MESSAGE value="Fixed loads of basic typo errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed loads of basic typo errors" />
   </component>
 </project>
