@@ -75,18 +75,18 @@ int main()
         }
 
         void menu() {
-            std::string response;
+            int response;
             std::cout << "Please select what you would like to do:" << std::endl;
             std::cout << "1. Start again." << std::endl;
             std::cin >> response;
 
             switch(response)
             {
-                case "1":
+                case 1:
                 start();
                 break;
 
-                case "2":
+                case 2:
 
                 break;
 
