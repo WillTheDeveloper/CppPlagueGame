@@ -24,6 +24,7 @@ int main()
         int incrementrate = 1000;
         int decrementrate = 1000;
         int rateMS = 500;
+        int score = 0;
 
         void reset() {
             plague = "";
@@ -33,6 +34,7 @@ int main()
             incrementrate = 1000;
             decrementrate = 1000;
             rateMS = 500;
+            score = 0;
 
             std::cout << "Successfully reset" << std::endl;
 
