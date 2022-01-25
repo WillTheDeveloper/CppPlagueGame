@@ -83,8 +83,6 @@ int main()
 
         void decrementPopulation()
         {
-
-
             while (ongoing)
             {
                 sleepForFewSeconds();
