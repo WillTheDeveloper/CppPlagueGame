@@ -21,6 +21,10 @@ int main()
 
         bool ongoing = false;
 
+        int incrementrate = 1000;
+        int decrementrate = 1000;
+        int rateMS = 500;
+
         void start() {
             std::cout << "Please state the name of the plague:" << std::endl;
             std::cin >> plague;
@@ -79,7 +83,7 @@ int main()
 
         void decrementPopulation()
         {
-            int decrementrate = 1000;
+
 
             while (ongoing)
             {
@@ -90,8 +94,6 @@ int main()
 
         void incrementPopulation()
         {
-            int incrementrate = 1000;
-
             while (ongoing)
             {
                 sleepForFewSeconds();
@@ -101,7 +103,7 @@ int main()
 
         void sleepForFewSeconds()
         {
-            std::this_thread::sleep_for(std::chrono::seconds(2));
+            std::this_thread::sleep_for(std::chrono::milliseconds(rateMS));
         }
 
         void menu() {
