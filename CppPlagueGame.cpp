@@ -35,6 +35,54 @@ int main()
 
             std::cout << "The world's current population is " << population << std::endl;
         }
+
+        void wouldYouLikeToStartAnOutbreak() {
+            std::string response;
+            std::cout << "Would you like to start an outbreak of " << plague << "?"<< " Y/N" << std::endl;
+            std::cin >> response;
+            if (response == "Y")
+            {
+                startOutbreak();
+            }
+            else if (response == "N")
+            {
+                std::string reply;
+                std::cout << "Why not??!?!?!?!?!?" << std::endl;
+                std::cin >> reply;
+            }
+        }
+
+        void startOutbreak() {
+            std::string suffix = "has just broken out in"
+            std::string prefix = "Oh no ~ "
+            std::cout << prefix << plague << suffix << "United Kingdom" << "!!!!!!?????" << std::endl;
+        }
+
+        void randomCountry() {
+            //This will randomly pick a country and return it.
+        }
+
+        void menu() {
+            std::string response;
+            std::cout << "Please select what you would like to do:" << std::endl;
+            std::cout << "1. Start again."
+            std::cin >> response;
+
+            switch(response)
+            {
+                case "1":
+                start();
+                break;
+
+                case "2":
+
+                break;
+
+                default:
+                std::cout << "Please enter a valid input!"
+                menu();
+            }
+        }
     };
     return 0;
 }
