@@ -9,6 +9,7 @@ int main()
     std::string name;
 
     std::cout << "Welcome to Plague; CPP Edition" << std::endl;
+    std::cout << "Enter your name: ";
     std::cin >> name;
     std::cout << "Hello, " << name << "." << std::endl;
 
@@ -71,19 +72,31 @@ int main()
             return countries[random];
         }
 
+        void displayCurrentPopulation()
+        {
+            std::cout << populationvalue << std::endl;
+        }
+
         void decrementPopulation()
         {
+            int decrementrate = 1000;
+
             while (ongoing)
             {
                 sleepForFewSeconds();
-                populationvalue -= 1000;
-                std::cout << populationvalue << std::endl;
+                populationvalue -= decrementrate;
             }
         }
 
         void incrementPopulation()
         {
-            
+            int incrementrate = 1000;
+
+            while (ongoing)
+            {
+                sleepForFewSeconds();
+                populationvalue += incrementrate;
+            }
         }
 
         void sleepForFewSeconds()
