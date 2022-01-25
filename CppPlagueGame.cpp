@@ -10,10 +10,6 @@ int main()
     std::cin >> name;
     std::cout << "Hello, " << name << "." << std::endl;
 
-    Plague yes;
-
-    yes.start;
-
     class Plague {
     public:
         std::string plague;
@@ -96,5 +92,9 @@ int main()
             }
         }
     };
+
+    Plague yes;
+    yes.start();
+
     return 0;
 }
