@@ -26,11 +26,11 @@ int main()
 
             if (plague.length() > 4) {
                 population = "7.4 billion";
-                populationvalue = 7400000000;
+                populationvalue = 740000000;
             }
             else if (plague.length() < 4) {
                 population = "5.4 billion";
-                populationvalue = 5400000000;
+                populationvalue = 540000000;
             }
 
             std::cout << "The world's current population is " << population << std::endl;

@@ -80,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643129602023</updated>
-      <workItem from="1643129603193" duration="1415000" />
+      <workItem from="1643129603193" duration="1475000" />
     </task>
     <task id="LOCAL-00001" summary="CLion files">
       <created>1643129621577</created>
@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643130192222</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed switch statement issue">
+      <created>1643131283400</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643131283400</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +140,7 @@
     <MESSAGE value="Created cMake files" />
     <MESSAGE value="Fixed loads of basic typo errors" />
     <MESSAGE value="Added end line that was missing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added end line that was missing" />
+    <MESSAGE value="Fixed switch statement issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed switch statement issue" />
   </component>
 </project>
