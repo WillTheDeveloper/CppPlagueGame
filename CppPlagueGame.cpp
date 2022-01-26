@@ -122,25 +122,68 @@ int main()
             std::this_thread::sleep_for(std::chrono::milliseconds(rateMS));
         }
 
+        void increaseRate(int rate) {
+            decrementrate = decrementrate + rate;
+            std::cout << "Rate has increased by " << rate << " to " << decrementrate << std::endl;
+        }
+
+        void decreaseRate(int rate) {
+            decrementrate = decrementrate - rate;
+            std::cout << "Rate has decreased by " << rate << " to " << decrementrate << std::endl;
+        }
+
+        void triggerMutation(int severity) {
+            int math = 1000 * severity;
+            populationvalue = populationvalue - severity;
+            std::cout << "The world population just took a massive hit and lost " << math << " members of the world" << std::endl;
+        }
+
+        void additionalThings()
+        {
+            int response;
+
+            std::cout << "You can make " << plague << " worse by buying on of the selections below:" << std::endl;
+            std::cout << "1. Increase vunerability to young people " << "(" << populationvalue * 0.25 << " people to be exact" << ")" << std::endl;
+            std::cout << "2. Increase vunerability to older people " << "(" << populationvalue * 0.5 << " people to be exact" << ")" << std::endl;
+            std::cout << "3. Trigger a mutation of " << plague << " worldwide" << std::endl;
+
+            std::cin >> response;
+
+            switch (response)
+            {
+            case 1:
+                decreaseRate(2500);
+                break;
+
+            case 2:
+                decreaseRate(5000);
+                break;
+
+            case 3:
+
+            }
+        }
+
         void menu() {
             int response;
             std::cout << "Please select what you would like to do:" << std::endl;
             std::cout << "1. Start again." << std::endl;
+            std::cout << "2. Current world population" << std::endl;
             std::cin >> response;
 
             switch(response)
             {
                 case 1:
-                reset();
+                    reset();
                 break;
 
                 case 2:
-
+                    std::cout << populationvalue << std::endl;
                 break;
 
                 default:
-                std::cout << "Please enter a valid input!";
-                menu();
+                    std::cout << "Please enter a valid input!";
+                    menu();
             }
         }
     };
