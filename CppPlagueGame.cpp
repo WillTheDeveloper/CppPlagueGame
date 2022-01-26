@@ -1,7 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
-#include <stdlib.h>
+#include <cstdlib>
 
 int main()
 {
@@ -87,13 +87,13 @@ int main()
             decrementPopulation();
         }
 
-        std::string randomCountry() {
+        static std::string randomCountry() {
             std::string countries[8] = {"UK", "USA", "Canada", "Germany", "Switzerland", "Italy", "Iceland", "Antarctica"};
             int random = rand() % 8 + 1;
             return countries[random];
         }
 
-        void displayCurrentPopulation()
+        void displayCurrentPopulation() const
         {
             std::cout << populationvalue << std::endl;
         }
@@ -118,7 +118,7 @@ int main()
             }
         }
 
-        void sleepForFewSeconds()
+        void sleepForFewSeconds() const
         {
             std::this_thread::sleep_for(std::chrono::milliseconds(rateMS));
         }
@@ -152,18 +152,23 @@ int main()
 
             switch (response)
             {
-            case 1:
-                decreaseRate(2500);
-                break;
+                case 1:
+                    decreaseRate(2500);
+                    break;
 
-            case 2:
-                decreaseRate(5000);
-                break;
+                case 2:
+                    decreaseRate(5000);
+                    break;
 
-            case 3:
-                triggerMutation(7);
-                break;
+                case 3:
+                    triggerMutation(7);
+                    break;
+
+                default:
+                    additionalThings();
+                    break;
             }
+
         }
 
         void menu() {

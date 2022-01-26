@@ -14,7 +14,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983bdd07-60ef-4b8b-9d61-6b1f08425f19" name="Changes" comment="Fixed values for population">
+    <list default="true" id="983bdd07-60ef-4b8b-9d61-6b1f08425f19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CppPlagueGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CppPlagueGame.cpp" afterDir="false" />
     </list>
@@ -61,12 +61,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="CppPlagueGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CppPlagueGame" TARGET_NAME="CppPlagueGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CppPlagueGame" RUN_TARGET_NAME="CppPlagueGame">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CppPlagueGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CppPlagueGame" TARGET_NAME="CppPlagueGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CppPlagueGame" RUN_TARGET_NAME="CppPlagueGame">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -80,7 +80,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643129602023</updated>
-      <workItem from="1643129603193" duration="6991000" />
+      <workItem from="1643129603193" duration="7082000" />
+      <workItem from="1643217693450" duration="75000" />
     </task>
     <task id="LOCAL-00001" summary="CLion files">
       <created>1643129621577</created>
@@ -201,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643136465847</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added method to call reset instead of start again">
+      <created>1643144488463</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643144488463</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +245,7 @@
     <MESSAGE value="Added logic to reset the game" />
     <MESSAGE value="Changed random country to array object 4" />
     <MESSAGE value="Added score value" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added score value" />
+    <MESSAGE value="Added method to call reset instead of start again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added method to call reset instead of start again" />
   </component>
 </project>
