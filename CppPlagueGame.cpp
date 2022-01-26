@@ -1,6 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include <stdlib.h>
 
 int main()
 {
@@ -88,7 +89,7 @@ int main()
 
         std::string randomCountry() {
             std::string countries[8] = {"UK", "USA", "Canada", "Germany", "Switzerland", "Italy", "Iceland", "Antarctica"};
-            int random = 4;
+            int random = rand() % 8 + 1;
             return countries[random];
         }
 
