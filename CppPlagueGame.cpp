@@ -170,6 +170,7 @@ int main()
             std::cout << "Please select what you would like to do:" << std::endl;
             std::cout << "1. Start again." << std::endl;
             std::cout << "2. Current world population" << std::endl;
+            std::cout << "3. Use power-up" << std::endl;
             std::cin >> response;
 
             switch(response)
@@ -180,6 +181,10 @@ int main()
 
                 case 2:
                     std::cout << populationvalue << std::endl;
+                break;
+
+                case 3:
+                    additionalThings();
                 break;
 
                 default:
