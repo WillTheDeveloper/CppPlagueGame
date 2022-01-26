@@ -160,7 +160,8 @@ int main()
                 break;
 
             case 3:
-
+                triggerMutation(7);
+                break;
             }
         }
 
