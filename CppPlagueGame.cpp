@@ -84,6 +84,7 @@ int main()
             std::cout << prefix << plague << suffix << country << "!" << std::endl;
 
             ongoing = true;
+            menu();
             decrementPopulation();
         }
 
@@ -104,7 +105,7 @@ int main()
             {
                 sleepForFewSeconds();
                 populationvalue -= decrementrate;
-                displayCurrentPopulation();
+                //displayCurrentPopulation();
             }
         }
 
@@ -114,7 +115,7 @@ int main()
             {
                 sleepForFewSeconds();
                 populationvalue += incrementrate;
-                displayCurrentPopulation();
+                //displayCurrentPopulation();
             }
         }
 
@@ -187,6 +188,7 @@ int main()
 
                 case 2:
                     std::cout << populationvalue << std::endl;
+                    menu();
                 break;
 
                 case 3:
