@@ -3,12 +3,17 @@
 #include <chrono>
 #include <cstdlib>
 
+// William Burton (github.com/WillTheDeveloper).
+// Just a silly game that I have never played before but follows the same concept as the originally Plague but runs in C++ console.
+// Repository and issues can be tracked on the repository found on my profile.
+
 int main()
 {
     class Plague;
 
     std::string name;
 
+    // Very start of the game. The method gets called beneath the class itself.
     std::cout << "Welcome to Plague; CPP Edition" << std::endl;
     std::cout << "Enter your name: ";
     std::cin >> name;
@@ -16,6 +21,7 @@ int main()
 
     class Plague {
     public:
+        // This is where all the public accessible values are initialised.
         std::string plague;
         std::string population;
         int populationvalue;
@@ -27,7 +33,7 @@ int main()
         int rateMS = 500;
         int score = 0;
 
-        void reset() {
+        void reset() { // This function resets all the initial values and just starts again.
             plague = "";
             population = "";
             populationvalue = 0;
@@ -42,7 +48,7 @@ int main()
             start();
         }
 
-        void start() {
+        void start() { // Basic start to the game which sets the name of the plague and other stuff.
             std::cout << "Please state the name of the plague:" << std::endl;
             std::cin >> plague;
 
@@ -60,7 +66,7 @@ int main()
             wouldYouLikeToStartAnOutbreak();
         }
 
-        void wouldYouLikeToStartAnOutbreak() {
+        void wouldYouLikeToStartAnOutbreak() { // Stupid question to ask whether they want to start an outbreak or not.
             std::string response;
             std::cout << "Would you like to start an outbreak of " << plague << "?"<< " Y/N" << std::endl;
             std::cin >> response;
@@ -76,7 +82,7 @@ int main()
             }
         }
 
-        void startOutbreak() {
+        void startOutbreak() { // Method that actually starts it, subsequent of previous method.
             std::string suffix = " has just broken out in ";
             std::string prefix = "Oh no ~ ";
             std::string country = randomCountry();
@@ -88,18 +94,18 @@ int main()
             decrementPopulation();
         }
 
-        static std::string randomCountry() {
+        static std::string randomCountry() { // Array needs expanding but a method that randomly and returns a country; for start of game.
             std::string countries[8] = {"UK", "USA", "Canada", "Germany", "Switzerland", "Italy", "Iceland", "Antarctica"};
             int random = rand() % 8 + 1;
             return countries[random];
         }
 
-        void displayCurrentPopulation() const
+        void displayCurrentPopulation() const // Method to just show the current population from a public variable.
         {
             std::cout << populationvalue << std::endl;
         }
 
-        void decrementPopulation()
+        void decrementPopulation() // Method that will just keep decreasing the population.
         {
             while (ongoing)
             {
@@ -109,7 +115,7 @@ int main()
             }
         }
 
-        void incrementPopulation()
+        void incrementPopulation() // Method that will just keep increasing the population.
         {
             while (ongoing)
             {
@@ -119,28 +125,28 @@ int main()
             }
         }
 
-        void sleepForFewSeconds() const
+        void sleepForFewSeconds() const // Method that allows program to wait a set amount of time from public variable.
         {
             std::this_thread::sleep_for(std::chrono::milliseconds(rateMS));
         }
 
-        void increaseRate(int rate) {
+        void increaseRate(int rate) { // Method that accepts a number that will increase the public variable rate by the number passed in.
             decrementrate = decrementrate + rate;
             std::cout << "Rate has increased by " << rate << " to " << decrementrate << std::endl;
         }
 
-        void decreaseRate(int rate) {
+        void decreaseRate(int rate) { // Method that accepts a number that will decrease the public variable rate by the number passed in.
             decrementrate = decrementrate - rate;
             std::cout << "Rate has decreased by " << rate << " to " << decrementrate << std::endl;
         }
 
-        void triggerMutation(int severity) {
-            int math = 1000 * severity;
-            populationvalue = populationvalue - severity;
-            std::cout << "The world population just took a massive hit and lost " << math << " members of the world" << std::endl;
+        void triggerMutation(int severity) { // Silly mutation method that does stuff.
+            int math = 1000 * severity; // Accepts number and multiplies it by 1000 to increase effeciency.
+            populationvalue = populationvalue - severity; // Calculate it.
+            std::cout << "The world population just took a massive hit and lost " << math << " members of the world" << std::endl; // Output to console.
         }
 
-        void additionalThings()
+        void additionalThings() // Does fun stuff to make the world end faster.
         {
             int response;
 
@@ -172,7 +178,7 @@ int main()
 
         }
 
-        void menu() {
+        void menu() { // Just a menu that shows and allows user to select stuff.
             int response;
             std::cout << "Please select what you would like to do:" << std::endl;
             std::cout << "1. Start again." << std::endl;
@@ -203,7 +209,7 @@ int main()
     };
 
     Plague yes;
-    yes.start();
+    yes.start(); // Method call inside class.
 
     return 0;
 }
