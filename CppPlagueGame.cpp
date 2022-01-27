@@ -9,8 +9,6 @@
 
 int main()
 {
-    class Plague;
-
     std::string name;
 
     // Very start of the game. The method gets called beneath the class itself.
