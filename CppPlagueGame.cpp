@@ -56,7 +56,7 @@ int main()
                 population = "7.4 billion";
                 populationvalue = 740000000;
             }
-            else if (plague.length() < 4) {
+            else if (plague.length() <= 4) {
                 population = "5.4 billion";
                 populationvalue = 540000000;
             }
