@@ -22,7 +22,7 @@ int main()
         // This is where all the public accessible values are initialised.
         std::string plague;
         std::string population;
-        int populationvalue;
+        int populationvalue{};
 
         bool ongoing = false;
 
