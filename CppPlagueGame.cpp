@@ -149,8 +149,8 @@ int main()
             int response;
 
             std::cout << "You can make " << plague << " worse by buying on of the selections below:" << std::endl;
-            std::cout << "1. Increase vunerability to young people " << "(" << populationvalue * 0.25 << " people to be exact" << ")" << std::endl;
-            std::cout << "2. Increase vunerability to older people " << "(" << populationvalue * 0.5 << " people to be exact" << ")" << std::endl;
+            std::cout << "1. Increase vulnerability to young people " << "(" << populationvalue * 0.25 << " people to be exact" << ")" << std::endl;
+            std::cout << "2. Increase vulnerability to older people " << "(" << populationvalue * 0.5 << " people to be exact" << ")" << std::endl;
             std::cout << "3. Trigger a mutation of " << plague << " worldwide" << std::endl;
 
             std::cin >> response;
