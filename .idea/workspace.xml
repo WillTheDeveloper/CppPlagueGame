@@ -14,9 +14,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="983bdd07-60ef-4b8b-9d61-6b1f08425f19" name="Changes" comment="">
+    <list default="true" id="983bdd07-60ef-4b8b-9d61-6b1f08425f19" name="Changes" comment="Optimized af">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CppPlagueGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CppPlagueGame.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +25,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -61,12 +59,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration name="CppPlagueGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CppPlagueGame" TARGET_NAME="CppPlagueGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CppPlagueGame" RUN_TARGET_NAME="CppPlagueGame">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="CppPlagueGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CppPlagueGame" TARGET_NAME="CppPlagueGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CppPlagueGame" RUN_TARGET_NAME="CppPlagueGame">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -81,7 +79,12 @@
       <option name="presentableId" value="Default" />
       <updated>1643129602023</updated>
       <workItem from="1643129603193" duration="7082000" />
-      <workItem from="1643217693450" duration="75000" />
+      <workItem from="1643217693450" duration="1553000" />
+      <workItem from="1643304209271" duration="17000" />
+      <workItem from="1643304298492" duration="1207000" />
+      <workItem from="1643308112609" duration="3000" />
+      <workItem from="1643471930624" duration="14000" />
+      <workItem from="1643471968330" duration="157000" />
     </task>
     <task id="LOCAL-00001" summary="CLion files">
       <created>1643129621577</created>
@@ -209,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643144488463</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Optimized af">
+      <created>1643217818094</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1643217818094</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +256,7 @@
     <MESSAGE value="Changed random country to array object 4" />
     <MESSAGE value="Added score value" />
     <MESSAGE value="Added method to call reset instead of start again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added method to call reset instead of start again" />
+    <MESSAGE value="Optimized af" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized af" />
   </component>
 </project>

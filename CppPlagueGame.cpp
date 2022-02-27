@@ -4,7 +4,7 @@
 #include <cstdlib>
 
 // William Burton (github.com/WillTheDeveloper).
-// Just a silly game that I have never played before but follows the same concept as the originally Plague but runs in C++ console.
+// Just a silly game that I have never played before but follows the same concept as the original Plague but runs in C++ console.
 // Repository and issues can be tracked on the repository found on my profile.
 
 int main()
@@ -139,7 +139,7 @@ int main()
         }
 
         void triggerMutation(int severity) { // Silly mutation method that does stuff.
-            int math = 1000 * severity; // Accepts number and multiplies it by 1000 to increase effeciency.
+            int math = 1000 * severity; // Accepts number and multiplies it by 1000 to increase efficiency.
             populationvalue = populationvalue - severity; // Calculate it.
             std::cout << "The world population just took a massive hit and lost " << math << " members of the world" << std::endl; // Output to console.
         }
@@ -207,7 +207,7 @@ int main()
     };
 
     Plague yes;
-    yes.start(); // Method call inside class.
+    yes.start(); // Method calls inside class.
 
     return 0;
 }
